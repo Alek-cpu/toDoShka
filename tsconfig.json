@@ -4,12 +4,23 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "outDir": "dist",
-    "baseUrl": "./src"
+    "baseUrl": "src",
+    "paths": {
+      "app/*": ["app/*"],
+      "pages/*": ["pages/*"],
+      "entities/*": ["entities/*"],
+      "features/*": ["features/*"],
+      "processes/*": ["processes/*"],
+      "shared/*": ["shared/*"],
+      "widgets/*": ["widgets/*"],
+    }
   },
   "include": ["src", "webpack.config.js"]
 }

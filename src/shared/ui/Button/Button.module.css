@@ -1,0 +1,40 @@
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background: #1e40af;
+}
+
+.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.secondary:hover {
+  background: #d1d5db;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.danger:hover {
+  background: #b91c1c;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
